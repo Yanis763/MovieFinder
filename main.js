@@ -14,7 +14,7 @@ const displayMovie = () => {
                 <div class="card mb-3 container-fluid" style="max-width: 940px; max-height: 300px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="${element.Poster}" alt="photo du film">
+      <img src="${element.Poster}" alt="photo du film" height ="200px">
     </div>
     <div class="col-md-8">
       <div class="card-body">
