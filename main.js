@@ -63,6 +63,7 @@ const displayMore = (title) => {
     .then((response) => response.json() )
     .then((data) => {
         document.querySelector(".modal-body").innerHTML =`
+        <img src=${data.Poster} alt="affiche du film">
         <p>
             ${data.Released}
             ${data.Plot}
