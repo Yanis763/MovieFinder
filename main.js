@@ -4,7 +4,7 @@ const apikey = 'cd17304';
 const displayMovie = () => {
     document.getElementById('display').innerHTML = "";
     const search = document.getElementById("searchBar").value
-    const url = `http://www.omdbapi.com/?s=${search}&apikey=${apikey}`;
+    const url = `https://www.omdbapi.com/?s=${search}&apikey=${apikey}`;
     fetch(url)
     .then((response) => response.json() )
     .then((data) => {
@@ -56,7 +56,7 @@ const displayMovie = () => {
 })
 }
 const displayMore = (title) => {
-    const moreUrl = `http://www.omdbapi.com/?t=${title}&apikey=${apikey}`;
+    const moreUrl = `https://www.omdbapi.com/?t=${title}&apikey=${apikey}`;
     const modalBody = document.querySelector(".modal-body");
     modalBody.innerHTML = "Chargement ...";
     fetch(moreUrl)
