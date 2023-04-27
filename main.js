@@ -1,6 +1,3 @@
-const apikey = 'cd17304';
-
-
 const displayMovie = () => {
     document.getElementById('display').innerHTML = "";
     const search = document.getElementById("searchBar").value
